@@ -4,11 +4,12 @@
   "description": "Basic example for an http server using nodejs api",
   "main": "index.js",
   "dependencies": {
-    "colors": "^1.4.0"
+    "colors": "^1.4.0",
+    "express": "^4.17.1"
   },
   "devDependencies": {},
   "scripts": {
-    "start": "node index.js", 
+    "start": "node index.js",
     "desarrollo": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
