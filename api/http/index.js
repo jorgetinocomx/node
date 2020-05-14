@@ -1,6 +1,8 @@
 const http = require("http");
 const port = 3000;
 
+const colors = require("colors");
+
 const serverHandler = function (request, response) {
 	// callback for  create server ending
 	response.writeHead(200, {"content-type" : "text/html"});
@@ -10,5 +12,5 @@ const serverHandler = function (request, response) {
 const server = http.createServer(serverHandler);
 server.listen(port,function () {
 	// init server callback
-	console.log("Server initiated on port :", port);
+	console.log(colors.green("Server initiated on port :", port));
 });
